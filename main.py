@@ -39,11 +39,11 @@ class Asiento():
             self.color = color
 
 
-class Motor():
-    def init(self):
-        self.numeroCilindros = int()
-        self.tipo = str()
-        self.registro = int()
+class Motor:
+    def init(self,numeroCilindros, tipo, registro):
+        self.numeroCilindros = numeroCilindros
+        self.tipo = tipo
+        self.registro = registro
 
     def cambiarRegistro(self, registro):
         self.registro = registro
