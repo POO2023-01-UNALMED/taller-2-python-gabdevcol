@@ -1,14 +1,12 @@
 class Auto():
-    def init(self, modelo = str(), precio = int(), asientos = [], marca = str(), motor = None, registro = int(), cantidadCreados = int()):
-        self.modelo = modelo
-        self.precio = precio
-        self.asientos = asientos
-        self.marca = marca
-        self.motor = motor
-        self.registro = registro
-        self.cantidadCreados = cantidadCreados
-        self.asientos += Asiento
-        self.motor = Motor
+    cantidadCreados = int()
+    def init(self):
+        self.modelo = str()
+        self.precio = int()
+        self.asientos = list()
+        self.marca = str()
+        self.motor = Motor()
+        self.registro = int()
 
     def cantidadAsientos(self):
         cantidad = len(self.asientos)
@@ -29,10 +27,10 @@ class Auto():
 
 
 class Asiento():
-    def init(self, color = str(), precio = int(), registro = int()):
-        self.color = color
-        self.precio = precio
-        self.registro = registro
+    def init(self):
+        self.color = str()
+        self.precio = int()
+        self.registro = int()
 
     def cambiarColor(self, color):
         coloresPermitidos = ['rojo', 'verde', 'amarillo', 'negro', 'blanco']
@@ -42,10 +40,10 @@ class Asiento():
 
 
 class Motor():
-    def init(self, numeroCilindros = int(), tipo = str(), registro = int()):
-        self.numeroCilindros = numeroCilindros
-        self.tipo = tipo
-        self.registro = registro
+    def init(self):
+        self.numeroCilindros = int()
+        self.tipo = str()
+        self.registro = int()
 
     def cambiarRegistro(self, registro):
         self.registro = registro
