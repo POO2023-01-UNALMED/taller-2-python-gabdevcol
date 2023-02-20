@@ -40,7 +40,7 @@ class Asiento():
 
 
 class Motor:
-    def init(self,numeroCilindros, tipo, registro):
+    def __init__(self, numeroCilindros, tipo, registro):
         self.numeroCilindros = numeroCilindros
         self.tipo = tipo
         self.registro = registro
