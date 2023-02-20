@@ -1,12 +1,12 @@
-class Auto():
+class Auto:
     cantidadCreados = int()
-    def init(self):
-        self.modelo = str()
-        self.precio = int()
-        self.asientos = list()
-        self.marca = str()
-        self.motor = Motor()
-        self.registro = int()
+    def __init__(self, modelo, precio, asientos, marca, motor, registro):
+        self.modelo = modelo
+        self.precio = precio
+        self.asientos = asientos
+        self.marca = marca
+        self.motor = motor
+        self.registro = registro
 
     def cantidadAsientos(self):
         cantidad = len(self.asientos)
@@ -26,11 +26,11 @@ class Auto():
         return mensaje
 
 
-class Asiento():
-    def init(self):
-        self.color = str()
-        self.precio = int()
-        self.registro = int()
+class Asiento:
+    def __init__(self, color, precio, registro):
+        self.color = color
+        self.precio = precio
+        self.registro = registro
 
     def cambiarColor(self, color):
         coloresPermitidos = ['rojo', 'verde', 'amarillo', 'negro', 'blanco']
