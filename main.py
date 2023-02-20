@@ -1,5 +1,5 @@
 class Auto():
-    def init(self, modelo = str(), precio = int(), asientos = [], marca = str, motor = None, registro = int(), cantidadCreados = int()):
+    def init(self, modelo = str(), precio = int(), asientos = [], marca = str(), motor = None, registro = int(), cantidadCreados = int()):
         self.modelo = modelo
         self.precio = precio
         self.asientos = asientos
