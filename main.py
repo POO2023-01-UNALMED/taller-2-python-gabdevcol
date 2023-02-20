@@ -9,11 +9,13 @@ class Auto:
         self.registro = registro
 
     def cantidadAsientos(self):
+        self.asientos.remove(None)
         cantidad = len(self.asientos)
         return cantidad
 
     def verificarIntegridad(self):
         mensaje = "Auto original"
+        self.asientos.remove(None)
         if self.motor.registro == self.registro:
             for asiento in self.asientos:
                 if asiento.registro != self.registro:
