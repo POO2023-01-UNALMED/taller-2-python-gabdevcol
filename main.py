@@ -11,7 +11,7 @@ class Auto:
     def cantidadAsientos(self):
         cantidad = 0
         for asiento in self.asientos:
-            if asiento != None:
+            if asiento:
                 cantidad += 1
         return cantidad
 
@@ -19,7 +19,7 @@ class Auto:
         mensaje = "Auto original"
         if self.motor.registro == self.registro:
             for asiento in self.asientos:
-                if asiento != None:
+                if asiento:
                     if asiento.registro != self.registro:
                         mensaje = "Las piezas no son originales"
                         break
